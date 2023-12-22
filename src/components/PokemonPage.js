@@ -31,8 +31,6 @@ function PokemonPage() {
 
     const numberOfPages = Math.ceil(pokemonData.count / PAGE_SIZE);
 
-    console.log(pokemonData);
-
     return (
         <>
             <div>
@@ -48,7 +46,7 @@ function PokemonPage() {
                 </select>
             </div>
             <div>
-                <PokemonList data={pokemonData.results} />
+                <PokemonList data={pokemonData.results}/>
             </div>
         </>
     )

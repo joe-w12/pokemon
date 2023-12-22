@@ -21,8 +21,6 @@ function PokemonTile({name, url}) {
         return () => controller.abort();
     }, [url]);
 
-    console.log(url);
-
     return (
         <div>
             <p>{name}</p>
